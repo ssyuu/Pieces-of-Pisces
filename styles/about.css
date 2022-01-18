@@ -1,0 +1,120 @@
+.main{
+    background: linear-gradient(rgba(52,70, 52, 0.253),rgba(52, 70, 52, 0.253)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 600px){
+    .det h1{
+        font-size: 2rem;
+    }
+    .det p{
+        font-size: 0.7rem;
+    }
+}
+
+.about{
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(rgba(52,70, 52, 0.253),rgba(52, 70, 52, 0.253)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.about h1{
+    font-size: 2.5rem;
+}
+
+.about-sub{
+    display: flex;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+    text-justify: auto;
+
+}
+.about-sub > img{
+    max-height:200px;
+    width: 300px;
+    max-width: 90pc;
+    top: 60px;
+    left: 50px;
+    border-radius: 10px;
+    animation: animateimage 1s linear;
+    margin-bottom: auto;
+}
+
+@keyframes animateimage {
+    from{
+        transform: translateY(-15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sub-sub-about{
+    background: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    border-spacing: 5px;
+    word-spacing: 3.5px;
+    padding: 35px;
+    margin: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 10px;
+    border-radius: 10px;
+    display: block;
+}
+.about-sub .sub-sub-about{
+    padding: 1rem;
+    animation: animatetext 1s linear;
+}
+
+@keyframes animatetext {
+    from{
+        transform: translateY(15px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-sub .sub-sub-about p{
+    font-size: 11px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+.footer .socialcontact a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #578d00d2;
+    margin: 5px 10px 10px 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer .socialcontact a:hover{
+    color: #578d00d2;
+    background-color: white;
+}

@@ -1,0 +1,106 @@
+nav{
+    height: 70px;
+    background-color: rgba(17, 17, 10, 0.548);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+
+}
+
+nav .logo img{
+    width: 15;
+    height: 50px;
+    margin: 0px 5px;
+}
+
+nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    background: rgb(144, 170, 28);
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    align-items: top;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: white
+}
+
+nav ul .active{
+    color: white;
+}
+
+nav .fa{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    nav .fa{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul .fa{
+        margin-bottom: 30px;
+    }
+    nav .logo img{
+        height: 40px;
+    }
+    nav .logo a{
+        font-size: 1.2rem;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        background-color: rgba(173, 169, 116, 0.521);
+        padding: 10px;
+        height: 100vh;
+        z-index: 99;
+        transform: scaleX(0);
+        transition: .1s ease-in;
+        transform-origin: right;
+    }
+
+    nav ul.menu{
+        transform: scaleX(1);
+    }
+    nav ul li{
+        margin-top: 10px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

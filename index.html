@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pieces of Pisces</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.PNG" class="pop">
+                <li><a href="index.html">PIECES OF PISCES</a>
+            </div>
+
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <ul>
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./dearest.html">DEAREST</a></li>
+                <li><a href="./experience.html">EXPERIENCE</a></li>
+            </ul>
+        </nav>
+
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/me.png" class="me">
+        </div>
+
+        <div class="det">
+            <h1>I'm Syuhada <span>Shamsureli</span></h1>
+            <br>
+            <p>Here are pieces of information about my life
+                <br><br>Know me better and enjoy!
+            </p>
+            <a>PLAY SONG</a>
+            <img src="images/play.png" id="icon">
+        </div>
+
+        <audio id="myplaylist">
+            <source src="songs/playlist.m4a" type="audio/mp3">
+        </audio>
+
+        <script>
+            var myplaylist = document.getElementById("myplaylist");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function () {
+                if (myplaylist.paused) {
+                    myplaylist.play();
+                    icon.src = "images/pause.png";
+                } else {
+                    myplaylist.pause();
+                    icon.src = "images/play.png";
+                }
+            }
+        </script>
+    </section>
+
+    <section class="about">
+        <h1>ABOUT</h1>
+        <div class="about-sub">
+            <img src="./images/about.jpeg" class="aboutbg">
+            <div class="sub-sub-about">
+                <h2>Pieces of Me</h2>
+                <br>
+                <p>
+                    My name is Nursyuhada Binti Shamsureli, usually called Syu in general. 
+                    Only the person closest to me would call me Adda. I was born on February 2001 
+                    which had me to be a Pisces. I did not practice and trust these astrological 
+                    horoscope in my daily life, I just loved to be called Pisces. Yet still, 
+                    I could say that I am emotionally sensitive and prefer calm envorinment. 
+                    I might be soft-hearted where I will not going to be mad for a long time as 
+                    I really hate argument. I'm usually the one that would make peace if there 
+                    is any issues among people around me.
+                    <br>
+                    I was raised in Semenyih, Selangor almost 2 decades and 
+                    will move to my birthplace in Kuala Kangsar, Perak in about 2 months from now. 
+                    Grow up here is teach me so many things in life. I've witnessed everything from 
+                    my lower path up until now in my maturation phase. 22 years of living brings all 
+                    the joy and misery feelings which hange me who I am now. I learnt from episodes 
+                    in my life and looking forward to treasure more in future. 
+                </p>
+            </div>
+        </div>
+        <div class="about-sub">
+            <div class="sub-sub-about">
+                <h2>Education</h2>
+                <br>
+                <p>
+                    I am having my last semester of Diploma in Information Management here in Rembau, Negeri Sembilan.
+                    It was a thrilling moment when I get my UPU result since I was the first in my family member
+                    who got into university. I'm proudly bring my family name in here with their physical and moral support
+                    to further my studies journey. I could not believe I'm in my last semester since we've been struck by the COVID-19 pandemic.
+                    I only get to enjoy my life in uni for only 7 month worth of one semester journey. After that,
+                    everything turns into chaos and struggles, Online Distance Learning is a total burden to us student
+                    physically and mentally. 
+                    <br>
+                    <br>
+                        However, I'm still planning to further my journey to Degree in the same course.
+                    I am actually waiting for my Penerapan UITM results which will be announce in March.
+                    The intense to finish my study as soon as possible to be able to live my life to the fullest 
+                    after were exxagerating. 
+                </p>
+            </div>
+            <img src="./images/about.jpeg" class="aboutbg">
+        </div>
+    </section>
+
+    <section>
+        <div class="dearest">
+            <h1>#1 <span>Treasure</span></h1>
+            <div class="slider-family">
+                <span style="--i:1;"><img src="./images/childfruit.jpeg" class=""></span>
+                <span style="--i:2;"><img src="./images/haizy.jpeg" class=""></span>
+                <span style="--i:3;"><img src="./images/syaffiq.jpeg" class=""></span>
+                <span style="--i:4;"><img src="./images/loveydovey.jpeg" class=""></span>
+                <span style="--i:5;"><img src="./images/dad.jpeg" class=""></span>
+                <span style="--i:6;"><img src="./images//parents2.jpeg" class=""></span>
+                <span style="--i:7;"><img src="./images/ohana2.jpeg" class=""></span>
+                <span style="--i:8;"><img src="./images/family.jpeg" class=""></span>
+            </div>   
+            <div class="sub-family">
+                <h2>Ohana</h2>
+                <br>
+                <p>
+                    This is my small family. Living with 9 family members
+                    are honestly were total fuss and mixed feelings. 
+                    Eventough we are having a rough time for years 
+                    but now each of us are trying to be a better person 
+                    to complete each other. 
+                    <br>
+                    <br>
+                    I have a 7 siblings with 5 boys and 2 girls 
+                    which one of it is me. Out of seven, I'm the fifth siblings 
+                    followed by my two younger brother. Two of my siblings 
+                    have been married which is my eldest brother already 
+                    in his 9th years of marriage and my third brother just married last year.  
+                </p>
+            </div>
+            <br>
+            <div class="slider-clique">
+                <span style="--i:1;"><img src="./images/fiqa.jpeg" class=""></span>
+                <span style="--i:2;"><img src="./images/bestie.jpeg" class=""></span>
+                <span style="--i:3;"><img src="./images/clique.jpeg" class=""></span>
+                <span style="--i:4;"><img src="./images/bestfriend.jpeg" class=""></span>
+                <span style="--i:5;"><img src="./images/unibff.jpeg" class=""></span>
+                <span style="--i:6;"><img src="./images/schoolbff.jpeg" class=""></span>
+                <span style="--i:7;"><img src="./images/oldbff.jpeg" class=""></span>
+                <span style="--i:8;"><img src="./images/ldrbff.jpeg" class=""></span>
+            </div>  
+            <div class="sub-clique">
+                <h2>Clique</h2>
+                <br>
+                <p>
+                    This is by far my closest friends, from primary school to university life. 
+                    These are the one who are still having me since day one. Each of them have special spot in my heart 
+                    with their presence. I appreciate each of them for staying eventough I did not gave much in our friendship.
+                    Few of them have been friend with me for a decade without having any fights or arguments.
+                    There are issues, but we solved it in a really mature ways which makes me value them the most in my life.
+                    I don't like complicate things in any relation with my life. This is my way of keeping my circle healthy, it is not only beneficial
+                    mentally but also emotionally. 
+                </p>
+            </div>
+            <div class="slider-partner">
+                <span style="--i:1;"><img src="./images/partner7.jpeg" class=""></span>
+                <span style="--i:2;"><img src="./images/partner6.jpeg" class=""></span>
+                <span style="--i:3;"><img src="./images/partner5.jpeg" class=""></span>
+                <span style="--i:4;"><img src="./images/partner4.jpeg" class=""></span>
+                <span style="--i:5;"><img src="./images/partner3.jpeg" class=""></span>
+                <span style="--i:6;"><img src="./images/partner2.jpeg" class=""></span>
+                <span style="--i:7;"><img src="./images/partner1.jpeg" class=""></span>
+                <span style="--i:8;"><img src="./images/partner.jpeg" class=""></span>
+            </div>   
+            <div class="sub-partner">
+                <h2>♥️</h2>
+                <br>
+                <p>
+                    He is the guy I met on early last year, starting my 2021 with him. He is not my first love,
+                    he came unexpectedly and running in my mind. I was in misery and struggling at that time, it then all blown away 
+                    after he appeared, I feel like the burden has gone. He brings comfort and warm
+                    into myself that no one could give to me. He is my second home, my safest place.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="experiences">
+            <h1>Life<span> Experiences</span></h1>
+            <div class="sub-slider-frame">
+                <h2>Volunteering</h2>
+                <br>
+                <p>
+                    Participating in flood volunteering is my one of an unforgetable experience.
+                    It was a grim and bleak situation, but unaffected communities who were able to help 
+                    quickly began organising fundraisers and volunteer efforts to relieve the floods' impact.
+                    Properties and vehicles were wrecked, people were stranded, missing, found deceased 
+                    and thousands of people are displaced.
+                    <br>
+                    <br>
+                    As I am not equipped to help with more advanced flood relief efforts as how the NGO do,
+                    what  I were able to instead offer was manpower. Since I'm currently in college here in Rembau,
+                    I decided to join my batchmates and Briged Sukarelawan under UiTM's sueprvision to affected area 
+                    around Negeri Sembilan to help out the victims clean their house, deliver food aid and also giving them moral support
+                    since they are losing so much due to the incident.
+                <div class="slider-frame">
+                    <div class="slide-images">
+                        <div class="img-container">
+                            <img src="./images/banjir1.jpeg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./images/banjir3.jpeg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./images/banjir4.jpeg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./images/banjir5.jpeg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./images/banjir6.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-slider-frame2">
+                <h2>Modelling</h2>
+                <br>
+                <p>
+                    This is actually my first out-of-comfort-zone experience on 2019. I was called by my mom's
+                    superior to be a model for her event which I had to help because of my mom.
+                    It was a brittle moment ever I would say. Had to learn those modelling things in just 2 days,
+                    yet I still made it eventhough I could not even feel myself back then. But,
+                    to be in the runway would be my last thing to do in my life.
+
+                    <br>
+                    <br>
+                    Modelling is totally not my thing, I would rather come as a guest
+                    rather to be in a runway and be attentive in crowds. That is because
+                    of my social anxiety that I have developed since I was in high school.
+                    Still, this is my first and last experience as a model which gaves me apprehension.
+                    It was a total fortune back then, the event was held privately in a hotel and only for small
+                    invitation which were surely be considerated.
+                <div class="slider-frame2">
+                    <div class="slide-images2">
+                        <div class="img-container">
+                            <img src="./images/model.jpeg">
+                        </div>
+                        <div class="img-container2">
+                            <img src="./images/model14.jpeg">
+                        </div>
+                        <div class="img-container2">
+                            <img src="./images/model3.jpeg">
+                        </div>
+                        <div class="img-container2">
+                            <img src="./images/model2.jpeg">
+                        </div>
+                        <div class="img-container2">
+                            <img src="./images/model1.jpeg">
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <div class="footer">
+        <h4>REACH ME</h4>
+        <div class="socialcontact">
+            <a href="https://instagram.com/ssyuu?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+            <a href="https://m.facebook.com/sssyuuu?ref=bookmarks"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/_sssyu?s=20"><i class="fab fa-twitter"></i></a>  
+        </div>
+
+    <p>Copyright © 2022 Pieces of Pisces Made with ♡ by NURSYUHADA SHAMSURELI
+    </p>
+    </div>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
